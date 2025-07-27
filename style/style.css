@@ -163,6 +163,39 @@ header .logo a {
   object-fit: cover;
 }
 
+/* Make images responsive globally */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 660px) {
+  .img_about img {
+    position: static !important;
+    width: 50% !important;
+    max-width: 150px !important;
+    margin: 1rem auto !important;
+    display: block !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+  }
+
+  .about {
+    position: static !important;
+    transform: none !important;
+    margin: 2rem auto !important;
+    padding: 0 1rem !important;
+    text-align: center !important;
+  }
+
+  #about {
+    height: auto !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
 
 .about .about-icons {
   padding: 12px 0;
